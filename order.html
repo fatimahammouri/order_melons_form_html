@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Order a Melongram  </h1>
-        <p>There's no better way to show a loved one you care than with a Melongram. </p>
+        <section>There's no better way to show a loved one you care than with a Melongram. <section>
 
         <p>Each Melongram comes with a custom message printed on high-quality cardstock
         and your choice of a hand-picked, premium melon. </p>
@@ -29,54 +29,69 @@
 
         </p>
 
-        <form>
-            <h2>Order Form</h2>
-            <p>
-                <label>Your name: </label>
-                <input type="text" name="name">
-            </p>
+        <h2>Order Form</h2>
+            <form>
+            
+            <div>
+                <label for="creator name">Your name: </label>
+                <input type="text" name="name" id="creator name">
+            </div>
                 
-            <p>
-                <label>Who are we sending this to?</label>
-                <input type="text" name="name">
-            </p>
+            <div>
+                <label for="recepient name">Who are we sending this to?</label>
+                <input type="text" name="name" id="recepient name">
+            </div>
                 
-            <p>
-                <label> Choose a melon  </label>
-                <select name="melon">
+            <div>
+                <label for="select melon"> Choose a melon  </label>
+                <select name="melon" id="select melon">
                     <option value="watermelon"> Watermleon</option>
                     <option value="canteloupe"> Canteloupe</option>
                     <option value="honeydew"> Honeydew</option>
-            </p>
-            
-            <p>
                 </select> 
-                <input type="radio" name="time" value="am">
-                <label>Morning</label>
-                <input type="radio" name="time" value="pm">
-                <label>Evening</label>
-                <input type="radio" name="time" value="any">
-                <label>Any time</label>
-            </p>
+            </div>
 
-            <p>
+            <div>
+                <fieldset>
+                    <legend>When should we Deliever ?</legend>
+                        <div>
+                            <input type="radio" name="time" value="am">
+                            <label>Morning</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="time" value="pm">
+                            <label>Evening</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="time" value="any">
+                            <label>Any time</label>
+                        </div>
+                        
+                        
+                </fieldset>
+            </div>
+            
+        
                 
-                <p>
-                    Enter your message:
-                </p>
-                <textarea name="message"></textarea>
-            </p>
+            
 
-            <p>
+            <div>
+                <p>
+                <header>Enter your message:</header>
+                <textarea name="message"></textarea>
+                </p>
+            </div>
+
+            <div>
                 <label>Subscribe to our newsletter</label>
                 
                 <input type="checkbox" name="subscribe" value="yes" >
                 <label> Yes!</label>
-            </p>
+            </div>
 
-            <p>
+            
                <button type="submit">Submit Query</button> 
-            </p>
+            
 
         </form>
 
